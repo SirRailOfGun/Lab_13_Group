@@ -2,13 +2,14 @@ package Lesson13;
 
 import java.util.Scanner;
 
-import Lab_12.StringSet;
-
 public class Control {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		testRooms();
+
+		System.out.println();
+		
 		testStrings();
 	}
 	
@@ -25,6 +26,8 @@ public class Control {
 		System.out.println(room.getCapacity());
 		System.out.println(room.getSquareFeet());
 
+		System.out.println();
+		
 		System.out.println(classroom);
 		System.out.println(classroom.getCapacity());
 		System.out.println(classroom.getSquareFeet());
@@ -36,6 +39,8 @@ public class Control {
 		System.out.println(classroom.getSquareFeet());
 		System.out.println(classroom.getNumOfChairs());
 
+		System.out.println();
+		
 		System.out.println(elevator);
 		System.out.println(elevator.getCapacity());
 		System.out.println(elevator.getSquareFeet());

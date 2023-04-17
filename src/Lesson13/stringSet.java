@@ -1,10 +1,10 @@
 package Lesson13;
 import java.util.ArrayList;
 
-public class stringSet extends ArrayList {
+public class StringSet extends ArrayList {
 	
 	
-	public stringSet() {
+	public StringSet() {
 		
 		
 	}
@@ -17,9 +17,8 @@ public class stringSet extends ArrayList {
 	public void pop() {
 		if(this.size() > 0) {
 			this.remove(this.size()-1);
-			}
-			
 		}
+	}
 	
 	public int sumValidIntegers() {
 		int sum = 0;
@@ -33,25 +32,25 @@ public class stringSet extends ArrayList {
 		}
         return sum;
 	}
+
+	public int numChars() {
+        int totalChars = 0;
+        for (int i = 0; i < this.size(); i++) {
+            if (this.get(i) != null) {
+                totalChars += ((String)this.get(i)).length();
+            }
+        }
+        return totalChars;
+    }
 	
-		public int numChars() {
-	        int totalChars = 0;
-	        for (int i = 0; i < this.size(); i++) {
-	            if (this.get(i) != null) {
-	                totalChars += ((String)this.get(i)).length();
-	            }
-	        }
-	        return totalChars;
-	    }
-		
-		public int countStrings(String stringToLookFor) {
-			 int count = 0;
-			    for (int i = 0; i < this.size(); i++) {
-			        if (this.get(i) != null && ((String)this.get(i)).contains(stringToLookFor)) {
-			            count++;
-			        }
-			    }
-			    return count; 
-		}
+	public int countStrings(String stringToLookFor) {
+		 int count = 0;
+		    for (int i = 0; i < this.size(); i++) {
+		        if (this.get(i) != null && ((String)this.get(i)).contains(stringToLookFor)) {
+		            count++;
+		        }
+		    }
+		    return count; 
+	}
 
 }
